@@ -3,7 +3,7 @@ const cells = document.querySelectorAll('.cell');
 const scoreEl = document.querySelector('#score');
 const timeEl = document.querySelector('#time');
 const startBtn = document.querySelector('#start');
-const cursor = doucment.querySelector('.cursor');
+const cursor = document.querySelector('.cursor');
 
 // add an image cursor
 
@@ -13,7 +13,7 @@ window.addEventListener('mousemove', function(e) {
 })
 // global variables
 let score = 0;
-let time = 10;
+let time = 15;
 let currentPos;
 
 // when a cell is clicked, it checks if the mole is there and updates the score if it is
@@ -22,6 +22,7 @@ cells.forEach(cell => {
         if (parseInt(cell.getAttribute('data-index')) === currentPos) {
             score++;
             scoreEl.innerHTML = score;
+            Image.src = '../img/41FFXLWM2ML.jpg'                                    //Change image when hit
         }
     })
 });
@@ -34,6 +35,7 @@ function start() {
         // emptying all cell at the start to ensure noo duplicate mole 
         cells.forEach(cell => {
             cell.innerHTML = '';
+
         });
 
         // filling a random cell by adding a div with mole class
