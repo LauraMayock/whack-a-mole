@@ -3,7 +3,14 @@ const cells = document.querySelectorAll('.cell');
 const scoreEl = document.querySelector('#score');
 const timeEl = document.querySelector('#time');
 const startBtn = document.querySelector('#start');
+const cursor = doucment.querySelector('.cursor');
 
+// add an image cursor
+
+window.addEventListener('mousemove', function(e) {
+    document.getElementById("cursor").style.left = e.pageX;
+    document.getElementById("cursor").style.top = e.pageY;
+})
 // global variables
 let score = 0;
 let time = 10;

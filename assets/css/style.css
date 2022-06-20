@@ -29,6 +29,11 @@ img {
     
 }
 
+body .board {
+    cursor: url(../img/41FFXLWM2ML.jpg),
+    auto;
+}
+
 .cell {
     width:150px;
     height: 150px;
@@ -39,7 +44,6 @@ img {
 .mole {
     width: 150px;
     height: 150px;
-    background-image: url(/assets/img/1291220.jpg);
     background-size: contain;
     animation: appear 0.09s,
 }
@@ -64,3 +68,9 @@ h1 h3 {
     margin: 5px;
 }
 
+.cursor {
+    height: 110px;
+    width: 100px;
+    top: 100px;
+    left: 100px;
+}
