@@ -2,19 +2,31 @@
     box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;800&display=swap');
+
 body {
-    margin: 0;
+    margin: 30px;
     height: 100vw;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: flex-start;
     flex-direction: column;
+    background-image: url(../img/minnion.jpg);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: contain; /* Resize the background image to cover the entire container */
+
 }
 
+img {
+    width: 100vw;
+    height: 100vw;
+}
 .board {
     width: 450px;
     display: flex;
     flex-wrap: wrap;
+    
 }
 
 .cell {
@@ -27,7 +39,7 @@ body {
 .mole {
     width: 150px;
     height: 150px;
-    background-image: url(/assets/img/pngegg.png);
+    background-image: url(/assets/img/1291220.jpg);
     background-size: contain;
     animation: appear 0.09s,
 }
@@ -45,3 +57,10 @@ body {
 .hide {
     display: none;
 }
+
+h1 h3 {
+    font-family: 'Manrope', sans-serif;
+    padding: 5px;
+    margin: 5px;
+}
+
